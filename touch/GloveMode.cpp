@@ -14,26 +14,29 @@
  * limitations under the License.
  */
 
+#include <fstream>
+
 #include "GloveMode.h"
 
-namespace vendor::lineage::touch::implementation {
+namespace vendor::lineage::touch::redfin {
 
 // Methods from ::vendor::lineage::touch::V1_0::IGloveMode follow.
 Return<bool> GloveMode::isEnabled() {
-    // TODO implement
-    return bool {};
+    std::ifstream file("/sys/class/sec/tsp/cmd_result");
+    if (file.is_open()) {
+        std::string line;
+        getline(file, line);
+        if (!line.compare("glove_mode,1:OK"))
+            return true;
+        file.close();
+    }
+    return false;
 }
 
 Return<bool> GloveMode::setEnabled(bool enabled) {
-    // TODO implement
-    return bool {};
+    std::ofstream file("/sys/class/sec/tsp/cmd");
+    file << "glove_mode," << (enabled ? "1" : "0");
+    return true;
 }
 
-
-// Methods from ::android::hidl::base::V1_0::IBase follow.
-
-//IGloveMode* HIDL_FETCH_IGloveMode(const char* /* name */) {
-    //return new GloveMode();
-//}
-//
-}  // namespace vendor::lineage::touch::implementation
+}  // namespace vendor::lineage::touch::redfin

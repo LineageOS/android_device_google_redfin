@@ -20,7 +20,7 @@
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 
-namespace vendor::lineage::touch::implementation {
+namespace vendor::lineage::touch::redfin {
 
 using ::android::hardware::hidl_array;
 using ::android::hardware::hidl_memory;
@@ -34,12 +34,6 @@ struct GloveMode : public V1_0::IGloveMode {
     // Methods from ::vendor::lineage::touch::V1_0::IGloveMode follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
-
-    // Methods from ::android::hidl::base::V1_0::IBase follow.
-
 };
 
-// FIXME: most likely delete, this is only for passthrough implementations
-// extern "C" IGloveMode* HIDL_FETCH_IGloveMode(const char* name);
-
-}  // namespace vendor::lineage::touch::implementation
+}  // namespace vendor::lineage::touch::redfin
