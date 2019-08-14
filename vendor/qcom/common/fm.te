@@ -1,0 +1,2 @@
+type fm_qsoc_patches, domain;
+type fm_qsoc_patches_exec, exec_type, vendor_file_type, file_type;

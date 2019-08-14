@@ -1,0 +1,2 @@
+type mdtpdaemon, domain;
+type mdtpdaemon_exec, exec_type, vendor_file_type, file_type;
