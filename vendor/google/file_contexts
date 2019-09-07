@@ -60,6 +60,8 @@
 /vendor/bin/tcpdump_logger                                                            u:object_r:tcpdump_logger_exec:s0
 /vendor/bin/hw/vendor\.google\.wireless_charger@1\.0-service-vendor                   u:object_r:hal_wlc_exec:s0
 /vendor/bin/hw/android\.hardware\.graphics\.composer@2\.3-service-sm8150              u:object_r:hal_graphics_composer_default_exec:s0
+/vendor/bin/hw/android.hardware.graphics.composer@2.1-service                         u:object_r:hal_graphics_composer_default_exec:s0
+/vendor/bin/hw/vendor.qti.hardware.display.composer-service                           u:object_r:hal_graphics_composer_default_exec:s0
 /vendor/bin/hw/init_dp.sh                                                             u:object_r:init_dp_exec:s0
 
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
