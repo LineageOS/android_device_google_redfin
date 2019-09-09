@@ -1,3 +1,0 @@
-type vendor_hal_factory_qti_default, domain;
-type vendor_hal_factory_qti_default_exec, exec_type, vendor_file_type, file_type;
-init_daemon_domain(vendor_hal_factory_qti_default)

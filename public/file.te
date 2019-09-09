@@ -1,1 +1,0 @@
-type dpmtcm_socket, file_type, coredomain_socket, mlstrustedobject;

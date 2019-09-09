@@ -1,3 +1,0 @@
-type wifi_ftmd, domain;
-type wifi_ftmd_exec, exec_type, vendor_file_type, file_type;
-init_daemon_domain(wifi_ftmd)

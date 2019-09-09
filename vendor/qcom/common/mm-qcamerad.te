@@ -1,3 +1,0 @@
-type mm-qcamerad, domain;
-type mm-qcamerad_exec, exec_type, vendor_file_type, file_type;
-init_daemon_domain(mm-qcamerad)
