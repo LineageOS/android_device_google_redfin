@@ -19,7 +19,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_redfin_64.mk \
     $(LOCAL_DIR)/vf/aosp_redfin_vf.mk \
     $(LOCAL_DIR)/aosp_redfin_hwasan.mk \
+    $(LOCAL_DIR)/lineage_redfin.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_redfin-userdebug \
     aosp_redfin_vf-userdebug \
+    lineage_redfin-userdebug
