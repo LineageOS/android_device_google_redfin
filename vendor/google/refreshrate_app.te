@@ -1,0 +1,11 @@
+type refreshrate_app, domain;
+
+app_domain(refreshrate_app);
+
+# Standard system services
+allow refreshrate_app app_api_service:service_manager find;
+allow refreshrate_app surfaceflinger_service:service_manager find;
+
+binder_call(refreshrate_app, gpuservice)
+
+set_prop(refreshrate_app, vendor_display_prop);
