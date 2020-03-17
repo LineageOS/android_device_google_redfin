@@ -49,10 +49,6 @@ $(call inherit-product, device/google/redfin/device-redfin.mk)
 $(call inherit-product-if-exists, vendor/google_devices/redfin/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/redfin/prebuilts/device-vendor-redfin.mk)
 
-# Exclude features that are not available on AOSP devices.
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/aosp_excluded_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/aosp_excluded_hardware.xml
-
 # Keep the VNDK APEX in /system partition for REL branches and Vendor Freeze targets
 # as these are expected to have stable API/ABI surfaces.
 ifneq (REL,$(PLATFORM_VERSION_CODENAME))
