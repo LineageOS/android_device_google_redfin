@@ -162,7 +162,7 @@ product/lib/libdmjavaplugin.so
 -product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
 -product/priv-app/ConnMO/ConnMO.apk
 -product/priv-app/DCMO/DCMO.apk
--product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED
+-product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED|8cbb418dbdb9056c1fca4682223ba0756cbccaa1
 -product/priv-app/DiagMon/DiagMon.apk
 -product/priv-app/DMService/DMService.apk
 -product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
