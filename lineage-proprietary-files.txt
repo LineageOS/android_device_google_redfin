@@ -272,7 +272,6 @@ system_ext/lib64/vendor.display.color@1.0.so
 system_ext/lib64/vendor.display.color@1.1.so
 system_ext/lib64/vendor.display.color@1.2.so
 system_ext/lib64/vendor.display.postproc@1.0.so
-system_ext/lib64/vendor.google.google_battery@1.0.so
 system_ext/lib64/vendor.google.wifi_ext@1.0.so
 system_ext/lib64/vendor.qti.data.factory@2.0.so
 system_ext/lib64/vendor.qti.data.factory@2.1.so
@@ -360,7 +359,6 @@ system_ext/lib/vendor.display.color@1.0.so
 system_ext/lib/vendor.display.color@1.1.so
 system_ext/lib/vendor.display.color@1.2.so
 system_ext/lib/vendor.display.postproc@1.0.so
-system_ext/lib/vendor.google.google_battery@1.0.so
 system_ext/lib/vendor.google.wifi_ext@1.0.so
 system_ext/lib/vendor.qti.data.factory@2.0.so
 system_ext/lib/vendor.qti.data.factory@2.1.so
