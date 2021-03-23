@@ -18,9 +18,6 @@ binder_use(pixelstats_vendor)
 allow pixelstats_vendor fwk_stats_service:service_manager find;
 
 allow pixelstats_vendor sysfs_scsi_devices_0000:file rw_file_perms;
-r_dir_file(pixelstats_vendor, sysfs_batteryinfo)
-# UeventListener
-allow pixelstats_vendor self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
 # wlc
 allow pixelstats_vendor sysfs_wlc:dir search;
