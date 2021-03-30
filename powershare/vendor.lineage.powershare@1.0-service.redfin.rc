@@ -1,0 +1,4 @@
+service vendor.powershare-hal-1-0-redfin /vendor/bin/hw/vendor.lineage.powershare@1.0-service.redfin
+    class hal
+    user system
+    group system
