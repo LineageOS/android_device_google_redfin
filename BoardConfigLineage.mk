@@ -16,3 +16,9 @@
 
 # Boardconfig for lineage_redfin
 -include device/google/redbull/BoardConfigLineage.mk
+
+# Manifests
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/google/redfin/lineage_compatibility_matrix.xml
+
+# SEPolicy
+BOARD_SEPOLICY_DIRS += device/google/redfin/sepolicy-lineage/vendor

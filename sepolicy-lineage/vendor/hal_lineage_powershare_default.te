@@ -1,0 +1,5 @@
+# hal_lineage_powershare_default.te
+
+allow hal_lineage_powershare_default sysfs_batteryinfo:dir search;
+allow hal_lineage_powershare_default sysfs_wlc:dir search;
+allow hal_lineage_powershare_default sysfs_wlc:file rw_file_perms;
