@@ -1,0 +1,11 @@
+<compatibility-matrix version="1.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.powershare</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPowerShare</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
