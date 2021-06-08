@@ -572,7 +572,11 @@ VENDOR_SKIP_FILES_REDBULL=(
     "lib/modules/wsa883x_dlkm.ko"
     "lib/modules/wsa_macro_dlkm.ko"
     "lib/modules/xhci-plat-hcd.ko"
+    "lib/modules/xxhash.ko"
     "lib/modules/zaurus.ko"
+    "lib/modules/zstd_compress.ko"
+    "lib/modules/zstd_decompress.ko"
+    "lib/modules/zstd.ko"
 
     # Overlays
     "overlay/FrameworksResCommon.apk"
