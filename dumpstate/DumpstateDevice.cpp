@@ -28,8 +28,6 @@
 #include <pthread.h>
 #include <string.h>
 
-#include <pcap.h>
-
 #define _SVID_SOURCE
 #include <dirent.h>
 
@@ -53,10 +51,6 @@
 #define MODEM_EFS_DUMP_PROPERTY "vendor.sys.modem.diag.efsdump"
 
 #define VENDOR_VERBOSE_LOGGING_ENABLED_PROPERTY "persist.vendor.verbose_logging_enabled"
-
-#define TIME_BUFFER 24
-#define STRING_BUFFER 550
-#define MAX_PACKET_LENGTH 150
 
 using android::os::dumpstate::CommandOptions;
 using android::os::dumpstate::DumpFileToFd;
@@ -119,132 +113,6 @@ static void dumpLogs(int fd, std::string srcDir, std::string destDir,
     free(dirent_list);
 }
 
-// Get timestamp and packet data
-static void GetTimeStampAndPkt(char *pktbuf, unsigned char *packet, char *strtime, int totalbyte){
-    int idxLog = 0;
-    int idxPkt = 0;
-    int firstPktDataIdx = 2;
-    int lastPktDataIdx = totalbyte - 2;
-    char arrTmpTime[19];
-    char arrStrTime[TIME_BUFFER];
-    char* tmpPktByteStr;
-    char* pktDataStr = pktbuf;
-    unsigned char arrPktData[MAX_PACKET_LENGTH];
-
-    memset(arrTmpTime, 0, sizeof(arrTmpTime));
-    while ((tmpPktByteStr = strtok_r(pktDataStr, " ", &pktDataStr))) {
-      if(idxLog == 0) {
-        snprintf(arrTmpTime, sizeof(arrTmpTime),"%s", tmpPktByteStr);
-      }
-      if(idxLog == 1) {
-        snprintf(arrStrTime, sizeof(arrStrTime),"%s %s",arrTmpTime, tmpPktByteStr);
-      }
-      if(idxLog > firstPktDataIdx && idxLog <= lastPktDataIdx) {
-        int data;
-        unsigned char pktdata;
-        sscanf(tmpPktByteStr,"%02x", &data);
-        pktdata = (unsigned char)data;
-        arrPktData[idxPkt] = pktdata;
-        idxPkt++;
-      }
-      idxLog++;
-    }
-    memcpy(packet, arrPktData, MAX_PACKET_LENGTH);
-    memcpy(strtime, arrStrTime, TIME_BUFFER);
-}
-
-static void ProcessPcapDump(FILE *fp, pcap_dumper_t *dumper)
-{
-    ALOGD("ProcessPcapDump(): enter");
-    char strLogBuf[STRING_BUFFER];
-    char arrPktBuf[STRING_BUFFER];
-    char arrPktSplitBuf[STRING_BUFFER];
-    char arrStrTime[TIME_BUFFER];
-    unsigned char arrPktData[MAX_PACKET_LENGTH];
-
-    if(fp  == NULL) {
-      ALOGD("can not read extended_log_datastall file!");
-      return;
-    }
-    if(dumper == NULL) {
-      ALOGD("can not open pcap file.");
-      return;
-    }
-
-    while (!feof(fp)) {
-      while (fgets(strLogBuf,STRING_BUFFER,fp)) {
-        if(strLogBuf[0] == '\n') {
-          continue;
-        }
-        memcpy(arrPktBuf, strLogBuf, sizeof(arrPktBuf));
-        memcpy(arrPktSplitBuf, strLogBuf, sizeof(arrPktSplitBuf));
-
-        int countPktLen = 0;
-        char* tmpPktByteStr;
-        char* pktDataStr = arrPktSplitBuf;
-        while ((tmpPktByteStr = strtok_r(pktDataStr, " ", &pktDataStr))) {
-          countPktLen+=1;
-        }
-
-        // Get timestamp and packet data
-        GetTimeStampAndPkt(arrPktBuf ,arrPktData, arrStrTime, countPktLen);
-
-        // Build packet header
-        int timeMSec;
-        char* strTime;
-        char* strTimeMsec;
-        char* strTmpTime = arrStrTime;
-        struct pcap_pkthdr pcap_hdr;
-        while ((strTime = strtok_r(strTmpTime, ".", &strTmpTime))) {
-          if(strTmpTime == NULL) {
-            break;
-          }
-          time_t time;
-          struct tm timeStruct;
-          memset(&timeStruct, 0, sizeof(struct tm));
-          if(strlen(strTime) == 19) {
-            strptime(strTime, "%Y-%m-%d %H:%M:%S", &timeStruct);
-            time = mktime(&timeStruct);
-            pcap_hdr.ts.tv_sec = time;
-          }
-          strTimeMsec = strtok_r(strTmpTime, ".", &strTmpTime);
-          if(strTimeMsec == NULL) {
-            break;
-          }
-          timeMSec = atoi(strTimeMsec);
-          pcap_hdr.ts.tv_usec = timeMSec;
-        }
-        pcap_hdr.caplen = sizeof(arrPktData);
-        pcap_hdr.len = pcap_hdr.caplen;
-        pcap_dump((u_char *)dumper, &pcap_hdr, arrPktData);
-      }
-    }
-}
-
-static void MergeAndConvertToPcap(char* logFile, char* oldlogFile, char* pcapFile) {
-
-    ALOGD("DumpPcap(): enter");
-    pcap_t *handle = pcap_open_dead(DLT_EN10MB, 1 << 16);
-    pcap_dumper_t *dumper = pcap_dump_open(handle, pcapFile);
-
-    if(dumper == NULL) {
-      ALOGD("can not open pcap file.");
-      return;
-    }
-
-    FILE *fp = fopen(oldlogFile, "r");
-    if(fp != NULL) {
-      ProcessPcapDump(fp, dumper);
-      fclose(fp);
-    }
-    fp = fopen(logFile, "r");
-    if(fp != NULL) {
-      ProcessPcapDump(fp, dumper);
-      fclose(fp);
-    }
-    pcap_dump_close(dumper);
-}
-
 static void *dumpModemThread(void *data)
 {
     long fdModem = (long)data;
@@ -300,12 +168,6 @@ static void *dumpModemThread(void *data)
         }
     }
     RunCommandToFd(STDOUT_FILENO, "CP MODEM POWERON LOG", {"/vendor/bin/cp", diagPoweronLogPath.c_str(), modemLogAllDir.c_str()}, CommandOptions::WithTimeout(2).Build());
-
-    // dump to pcap
-    char fpcapname[]="/data/vendor/radio/extended_logs/extended_log_datastall.pcap";
-    char flogname[]="/data/vendor/radio/extended_logs/extended_log_datastall.txt";
-    char flogoldname[]="/data/vendor/radio/extended_logs/extended_log_datastall.txt.old";
-    MergeAndConvertToPcap(flogname, flogoldname, fpcapname);
 
     if (!PropertiesHelper::IsUserBuild()) {
         char cmd[256] = { 0 };
