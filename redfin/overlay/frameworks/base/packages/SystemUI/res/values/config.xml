@@ -44,13 +44,12 @@
          noisy sensors. -->
     <item name="proximity_sensor_threshold_latch" translatable="false" format="float" type="dimen">24</item>
 
-    <string name="proximity_sensor_secondary_type" translatable="false">com.google.sensor.binned_brightness</string>
+    <string name="proximity_sensor_secondary_type" translatable="false">android.sensor.proximity</string>
     <item name="proximity_sensor_secondary_threshold" translatable="false" format="float"
-          type="dimen">1</item>
+          type="dimen">5</item>
 
     <!-- Doze: can we assume the pickup sensor includes a proximity check? -->
     <bool name="doze_pickup_performs_proximity_check">true</bool>
-
 
     <!-- Doze: only register sensors that use prox when device is in certain Display states. This
      may delay registering sensors when device first shows dozing UI but the
