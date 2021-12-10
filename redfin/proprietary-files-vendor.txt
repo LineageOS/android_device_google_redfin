@@ -410,8 +410,6 @@ vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/hals.conf
-vendor/etc/sensors/proto/sns_direct_channel.proto
-vendor/etc/sensors/proto/sns_formatter_notify.proto
 vendor/etc/sensors/sns_reg_config
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
