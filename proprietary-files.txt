@@ -2,6 +2,9 @@
 
 # product partition
 
+# AiAi
+product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk;PRESIGNED
+
 # Audio
 product/etc/ambient/matcher_tah.leveldb
 product/etc/firmware/music_detector.descriptor
