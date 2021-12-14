@@ -63,6 +63,10 @@ function blob_fixup() {
     product/etc/sysconfig/nexus.xml)
         sed -i 's/qulacomm/qualcomm/' "${2}"
         ;;
+    # Remove lazy service configuration for proprietary qcom interface
+    vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc)
+        sed -i '/vendor.qti.hardware.dsp@1.0::IDspService/d' "${2}"
+        ;;
     esac
 }
 
