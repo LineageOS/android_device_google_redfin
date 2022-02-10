@@ -2,5 +2,9 @@
   {
     "repository": "android_device_google_redbull",
     "target_path": "device/google/redbull"
+  },
+  {
+    "repository": "android_kernel_google_redbull",
+    "target_path": "kernel/google/redbull"
   }
 ]
