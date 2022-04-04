@@ -1491,6 +1491,9 @@ VENDOR_SKIP_FILES=(
     "lib64/vendor.qti.hardware.sigma_miracast@1.0.so"
 )
 
+# Initialize the helper
+setup_vendor_deps "${ANDROID_ROOT}"
+
 generate_prop_list_from_image "${_input_image}" "${_output_file}" VENDOR_SKIP_FILES
 
 # Fixups
