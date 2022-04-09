@@ -23,8 +23,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=redfin \
-    PRIVATE_BUILD_DESC="redfin-user 12 SP2A.220305.012 8177914 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 12 SP2A.220405.003 8210211 release-keys"
 
-BUILD_FINGERPRINT := google/redfin/redfin:12/SP2A.220305.012/8177914:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:12/SP2A.220405.003/8210211:user/release-keys
 
 $(call inherit-product, vendor/google/redfin/redfin-vendor.mk)
