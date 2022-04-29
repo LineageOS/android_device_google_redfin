@@ -19,7 +19,7 @@ PRODUCT_HARDWARE := redfin
 include build/make/target/product/iorap_large_memory_config.mk
 include device/google/redbull/device-common.mk
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 # LOCAL_PATH is device/google/redbull before this
 LOCAL_PATH := device/google/redfin
