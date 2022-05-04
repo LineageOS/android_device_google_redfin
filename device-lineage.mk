@@ -9,6 +9,10 @@ $(call inherit-product, device/google/redbull/device-lineage.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-lineage
 
+# HBM
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlay
+
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
