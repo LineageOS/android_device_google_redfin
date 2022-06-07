@@ -121,6 +121,7 @@ product/etc/CarrierSettings/kpn_nl.pb
 product/etc/CarrierSettings/liberty_pr.pb
 product/etc/CarrierSettings/linemo_jp.pb
 product/etc/CarrierSettings/luckymobile_ca.pb
+product/etc/CarrierSettings/m1_sg.pb
 product/etc/CarrierSettings/metropcs_us.pb
 product/etc/CarrierSettings/movistar_es.pb
 product/etc/CarrierSettings/o2_de.pb
@@ -188,6 +189,7 @@ product/etc/CarrierSettings/virgin_ca.pb
 product/etc/CarrierSettings/virgin_gb.pb
 product/etc/CarrierSettings/virgin_us.pb
 product/etc/CarrierSettings/visible_us.pb
+product/etc/CarrierSettings/visiblev_us.pb
 product/etc/CarrierSettings/vodafone_au.pb
 product/etc/CarrierSettings/vodafone_cz.pb
 product/etc/CarrierSettings/vodafone_de.pb
