@@ -1017,8 +1017,6 @@ VENDOR_SKIP_FILES=(
     "lib64/libeffectsconfig.so"
     "lib64/libgeofencing.so"
     "lib64/libgnss.so"
-    "lib64/libgooglecamerahal.so"
-    "lib64/libgooglecamerahalutils.so"
     "lib64/libgps.utils.so"
     "lib64/libgrallocusage.so"
     "lib64/libkeymaster4_1support.so"
