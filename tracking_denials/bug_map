@@ -5,3 +5,4 @@ init app_data_file dir b/241172516
 init gsi_data_file file b/241172516
 init privapp_data_file dir b/241172516
 init system_app_data_file dir b/241172516
+system_server vendor_incremental_module file b/264483807
