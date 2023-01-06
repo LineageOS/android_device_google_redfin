@@ -1,5 +1,6 @@
 dumpstate hal_input_processor_default process b/238263647
 dumpstate incident process b/238263647
+dumpstate system_data_file dir b/264600011
 hal_drm_widevine default_prop file b/238263747
 init app_data_file dir b/241172516
 init gsi_data_file file b/241172516
