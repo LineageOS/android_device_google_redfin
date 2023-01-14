@@ -1,1 +1,0 @@
-allow hal_wireless_charger sysfs_chargelevel:file rw_file_perms;
