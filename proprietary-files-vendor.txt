@@ -605,6 +605,7 @@ vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/ese_spi_st.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/audio.primary.lito.so
@@ -873,8 +874,9 @@ vendor/lib/libssc_default_listener.so
 vendor/lib/libssc_proto.so
 vendor/lib/libssc_safe.so
 vendor/lib/libssd.so
+vendor/lib/libstpreprocess20.so
 vendor/lib/libstreamparser.so
-vendor/lib/libstreset.so
+vendor/lib/libstreset20.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libsueznanoappclients.so
 vendor/lib/libsurround_3mic_proc.so
@@ -1453,7 +1455,8 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/libssc_proto.so
 vendor/lib64/libssc_safe.so
 vendor/lib64/libssd.so
-vendor/lib64/libstreset.so
+vendor/lib64/libstpreprocess20.so
+vendor/lib64/libstreset20.so
 vendor/lib64/libsubsystem_control.so
 vendor/lib64/libsueznanoappclients.so
 vendor/lib64/libswregistrationalgo.so
