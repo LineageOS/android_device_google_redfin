@@ -1,4 +1,28 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a55c96a_35bfa548",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 786,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2023-03-19T19:06:25Z",
+      "side": 1,
+      "message": "Redfin build now fails because LLKAgent is gone from TQ2A.230305.008.C1. Or at least is gone from the actual blob update. I haven\u0027t downloaded the factory image yet to verify.",
+      "range": {
+        "startLine": 786,
+        "startChar": 0,
+        "endLine": 786,
+        "endChar": 5
+      },
+      "revId": "92ad8ac21915356b9644b35a6c155bf2bbae93e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
