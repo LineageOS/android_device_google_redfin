@@ -449,7 +449,6 @@ system_ext/lib/libminksocket_system.so
 system_ext/lib/libmmosal.so
 system_ext/lib/libmwqemiptablemgr.so
 system_ext/lib/libqape.qti.so
-system_ext/lib/libqcc.so
 system_ext/lib/libqcc_file_agent_sys.so
 system_ext/lib/libqmi_cci_system.so
 system_ext/lib/libqmi_encdec_system.so
@@ -641,7 +640,6 @@ system_ext/lib64/libmsp.so
 system_ext/lib64/libmwqemiptablemgr.so
 system_ext/lib64/libpowerstatshaldataprovider.so
 system_ext/lib64/libqape.qti.so
-system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
 system_ext/lib64/libqmi_cci_system.so
 system_ext/lib64/libqmi_encdec_system.so
