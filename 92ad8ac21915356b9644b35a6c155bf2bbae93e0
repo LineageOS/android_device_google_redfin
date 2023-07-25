@@ -22,6 +22,30 @@
       },
       "revId": "92ad8ac21915356b9644b35a6c155bf2bbae93e0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f20a880_1612e67a",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 786,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-07-25T17:00:41Z",
+      "side": 1,
+      "message": "This has been fixed",
+      "parentUuid": "3a55c96a_35bfa548",
+      "range": {
+        "startLine": 786,
+        "startChar": 0,
+        "endLine": 786,
+        "endChar": 5
+      },
+      "revId": "92ad8ac21915356b9644b35a6c155bf2bbae93e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
