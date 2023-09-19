@@ -93,7 +93,7 @@ ScopedAStatus Usb::enableUsbData(const string& in_portName, bool in_enable,
         }
 
         if (!WriteStringToFile("0", USB_DATA_PATH)) {
-            ALOGE("Not able to turn on usb connection notification");
+            ALOGE("Not able to turn off usb connection notification");
             result = false;
         }
     }
