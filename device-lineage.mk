@@ -5,3 +5,6 @@
 #
 
 $(call inherit-product, device/google/redbull/device-lineage.mk)
+
+# wireless_charger HAL service
+include device/google/redfin/wireless_charger/wireless_charger.mk
