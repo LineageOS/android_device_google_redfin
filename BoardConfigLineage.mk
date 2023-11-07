@@ -9,7 +9,7 @@ BOOT_KERNEL_MODULES += sec_touch.ko
 
 include device/google/redbull/BoardConfigLineage.mk
 
-BOOT_SECURITY_PATCH := 2023-10-05
-VENDOR_SECURITY_PATCH := 2023-10-05
+BOOT_SECURITY_PATCH := 2023-11-05
+VENDOR_SECURITY_PATCH := 2023-11-05
 
 include vendor/google/redfin/BoardConfigVendor.mk
