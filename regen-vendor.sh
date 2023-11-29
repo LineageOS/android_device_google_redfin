@@ -1172,6 +1172,12 @@ VENDOR_SKIP_FILES=(
     "lib64/android.hardware.camera.device@3.2.so"
     "lib64/android.hardware.camera.provider@2.4.so"
 
+    # Charger
+    "res/images/charger/animation.txt"
+    "res/images/charger/battery_fail.png"
+    "res/images/charger/battery_scale.png"
+    "res/images/charger/main_font.png"
+
     # CHRE
     "bin/chre"
     "etc/init/chre_daemon.rc"
