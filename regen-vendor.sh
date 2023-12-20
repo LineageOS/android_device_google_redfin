@@ -1497,6 +1497,10 @@ VENDOR_SKIP_FILES=(
     "lib/ese_spi_st.so"
     "lib/libstpreprocess20.so"
 
+    # Wi-Fi
+    "lib/libqsap_sdk.so"
+    "lib64/libqsap_sdk.so"
+
     # Wi-Fi display
     "lib/libFileMux_proprietary.so"
     "lib/libmmrtpdecoder_proprietary.so"
