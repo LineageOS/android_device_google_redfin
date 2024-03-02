@@ -63,9 +63,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # b/113232673 STOPSHIP deal with Qualcomm stuff later
 # PRODUCT_RESTRICT_VENDOR_FILES := all
 
-# b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_redfin
