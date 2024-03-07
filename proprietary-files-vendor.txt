@@ -1376,7 +1376,14 @@ vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnetmgr_nr_fusion.so
 vendor/lib64/libnetmgr_rmnet_ext.so
 vendor/lib64/libnlnetmgr.so
+vendor/lib64/libnos.so
 vendor/lib64/libnos_citadeld_proxy.so
+vendor/lib64/libnos_client_citadel.so
+vendor/lib64/libnos_datagram.so
+vendor/lib64/libnos_datagram_citadel.so
+vendor/lib64/libnos_feature.so
+vendor/lib64/libnos_transport.so
+vendor/lib64/libnosprotos.so
 vendor/lib64/libnpu.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libofflinelog.so
@@ -1488,6 +1495,10 @@ vendor/lib64/libxml.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_server_protocol.so
 vendor/lib64/libxtwifi_server_protocol_uri_v3.so
+vendor/lib64/nos_app_avb.so
+vendor/lib64/nos_app_identity.so
+vendor/lib64/nos_app_keymaster.so
+vendor/lib64/nos_app_weaver.so
 vendor/lib64/qcrild_librilutils.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
