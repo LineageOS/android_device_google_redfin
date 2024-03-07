@@ -814,6 +814,8 @@ vendor/lib/libpdnotifier.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libpowercallback.so
 vendor/lib/libpowercore.so
+vendor/lib/libprotobuf-cpp-full-21.7.so
+vendor/lib/libprotobuf-cpp-lite-21.7.so
 vendor/lib/libpvr.so
 vendor/lib/libqcbor.so
 vendor/lib/libqcc_file_agent.so
@@ -1397,6 +1399,8 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libpower_anomaly_data.so
 vendor/lib64/libpowercallback.so
 vendor/lib64/libpowercore.so
+vendor/lib64/libprotobuf-cpp-full-21.7.so
+vendor/lib64/libprotobuf-cpp-lite-21.7.so
 vendor/lib64/libpvr.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqcc_file_agent.so
