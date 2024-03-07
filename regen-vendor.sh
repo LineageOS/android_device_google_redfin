@@ -98,7 +98,6 @@ VENDOR_SKIP_FILES=(
     "bin/hostname"
     "bin/hw/android.hardware.audio.service"
     "bin/hw/android.hardware.boot@1.2-service"
-    "bin/hw/android.hardware.camera.provider@2.7-service-google"
     "bin/hw/android.hardware.cas-service.example"
     "bin/hw/android.hardware.cas@1.2-service"
     "bin/hw/android.hardware.contexthub-service.generic"

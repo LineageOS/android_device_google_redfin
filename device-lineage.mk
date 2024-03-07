@@ -9,6 +9,11 @@ $(call inherit-product, device/google/redbull/device-lineage.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-lineage
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.device-V2-ndk.vendor:64 \
+    android.hardware.camera.provider-V2-ndk.vendor:64
+
 # HBM
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlay
