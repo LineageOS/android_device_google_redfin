@@ -1403,6 +1403,12 @@ VENDOR_SKIP_FILES=(
     "lib64/libwifi-hal-ctrl.so"
     "lib64/libwifi-hal-qcom.so"
 
+    # Wi-Fi service
+    "bin/hw/vendor.google.wifi_ext-service-vendor"
+    "etc/init/vendor.google.wifi_ext-service.rc"
+    "etc/vintf/manifest/manifest_wifi_ext_aidl.xml"
+    "lib64/vendor.google.wifi_ext-V1-ndk.so"
+
     # Misc interfaces
     "lib/android.hardware.authsecret@1.0.so"
     "lib/android.hardware.gatekeeper@1.0.so"

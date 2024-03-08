@@ -44,7 +44,6 @@ vendor/bin/hw/qcrild
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/hw/vendor.google.google_battery-service
 vendor/bin/hw/vendor.google.radioext@1.0-service
-vendor/bin/hw/vendor.google.wifi_ext-service-vendor
 vendor/bin/hw/vendor.google.wireless_charger-default
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
@@ -321,7 +320,6 @@ vendor/etc/init/twoshay.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.google.google_battery-default.rc
 vendor/etc/init/vendor.google.radioext@1.0-service.rc
-vendor/etc/init/vendor.google.wifi_ext-service.rc
 vendor/etc/init/vendor.google.wireless_charger-default.rc
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
@@ -429,7 +427,6 @@ vendor/etc/vintf/manifest/android.hardware.weaver@1.0-service.citadel.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine-v17.xml
 vendor/etc/vintf/manifest/manifest_input.processor-service.xml
-vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml
 vendor/etc/vintf/manifest/rebootescrow-citadel.xml
 vendor/etc/vintf/manifest/vendor.google.google_battery-default.xml
 vendor/etc/vintf/manifest/vendor.google.wireless_charger-default.xml
@@ -1534,7 +1531,6 @@ vendor/lib64/vendor.google.radioext@1.0.so
 vendor/lib64/vendor.google.radioext@1.1.so
 vendor/lib64/vendor.google.radioext@1.2.so
 vendor/lib64/vendor.google.radioext@1.3.so
-vendor/lib64/vendor.google.wifi_ext-V1-ndk.so
 vendor/lib64/vendor.google.wifi_ext@1.0.so
 vendor/lib64/vendor.google.wireless_charger-V1-ndk.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
