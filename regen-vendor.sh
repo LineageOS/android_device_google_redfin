@@ -1516,6 +1516,10 @@ function presign() {
     sed -i "s|vendor/${1}$|vendor/${1};PRESIGNED|g" "${_output_file}"
 }
 
+function require() {
+    sed -i "s|vendor/${1}$|vendor/${1};REQUIRED=${2}|g" "${_output_file}"
+}
+
 function symlink() {
     sed -i "s|vendor/${1}$|vendor/${1};SYMLINK=${2}|g" "${_output_file}"
 }
@@ -1529,6 +1533,8 @@ function header() {
 }
 
 presign "app/adreno_graphics_driver/adreno_graphics_driver.apk"
+
+require "app/CneApp/CneApp.apk" "CneApp.libvndfwk_detect_jni.qti_symlink"
 
 symlink "lib/egl/libEGL_adreno.so" "vendor/lib/libEGL_adreno.so"
 symlink "lib/egl/libGLESv2_adreno.so" "vendor/lib/libGLESv2_adreno.so"
