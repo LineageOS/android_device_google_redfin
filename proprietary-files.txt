@@ -101,8 +101,8 @@ product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
 system_ext/etc/permissions/com.google.android.camera.extensions.xml
 system_ext/framework/com.google.android.camera.extensions.jar
 
-# HBM
-system_ext/priv-app/HbmSVManager/HbmSVManager.apk|fa6024ec1a34cf2ed74b6d3e3d78ac5f9ebdd8cf
+# HBM - from barbet AP1A.240405.002
+system_ext/priv-app/HbmSVManager/HbmSVManager.apk|b7c4bd54334714da94f1bcfb16fb44edbfd273b9
 
 # Hotword
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
@@ -145,7 +145,6 @@ system_ext/etc/permissions/google-ril.xml
 system_ext/framework/RadioConfigLib.jar
 system_ext/framework/google-ril.jar
 system_ext/priv-app/CarrierSetup/CarrierSetup.apk;PRESIGNED
-system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk
 system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk
 system_ext/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
 system_ext/priv-app/EuiccSupportPixel/P20_Mini-Applet_dsem.apdu
@@ -153,6 +152,9 @@ system_ext/priv-app/EuiccSupportPixel/esim-full-v1.img
 system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk;PRESIGNED
 system_ext/priv-app/RilConfigService/RilConfigService.apk
 system_ext/priv-app/grilservice/grilservice.apk;PRESIGNED
+
+# Radio - from barbet AP1A.240405.002
+system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk|7624c30babbbe250f0e557a2566c22fac9c9d303
 
 # SecureUI
 system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
@@ -169,7 +171,7 @@ system_ext/priv-app/obdm_stub/obdm_stub.apk;PRESIGNED
 
 # vendor partition
 
-# Wi-Fi service
+# Wi-Fi service - from barbet AP1A.240405.002
 vendor/bin/hw/vendor.google.wifi_ext-service-vendor|1edcbf349a1fcf471f726bcbb5eb31a2e6db89fa
 vendor/etc/init/vendor.google.wifi_ext-service.rc|8565ca57da131819441d6fb87abfcae134ed2ef9
 vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml|6c411f5a63ebc252698fc880d8813ca8c9c63d9c
