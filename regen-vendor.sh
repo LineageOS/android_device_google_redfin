@@ -1181,7 +1181,6 @@ VENDOR_SKIP_FILES=(
     "lib/libcodec2_hidl@1.0.so"
     "lib/libcodec2_hidl_plugin.so"
     "lib/libcodec2_vndk.so"
-    "lib/libmedia_ecoservice.so"
     "lib/libstagefright_aidl_bufferpool2.so"
     "lib/libstagefright_bufferpool@2.0.1.so"
     "lib64/android.hardware.media.bufferpool2-V1-ndk.so"
@@ -1190,7 +1189,6 @@ VENDOR_SKIP_FILES=(
     "lib64/libcodec2_hidl@1.0.so"
     "lib64/libcodec2_hidl_plugin.so"
     "lib64/libcodec2_vndk.so"
-    "lib64/libmedia_ecoservice.so"
     "lib64/libstagefright_aidl_bufferpool2.so"
     "lib64/libstagefright_bufferpool@2.0.1.so"
 
