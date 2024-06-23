@@ -33,6 +33,4 @@ else
   -include vendor/google_devices/redfin/proprietary/BoardConfigVendor.mk
 endif
 
-BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
-
 include device/google/redfin/BoardConfigLineage.mk
