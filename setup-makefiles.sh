@@ -50,6 +50,7 @@ function lib_to_package_fixup_vendor_variants() {
         libprotobuf-cpp-lite-21.12)
             echo "libprotobuf-cpp-lite"
             ;;
+        libwpa_client) ;;
         *)
             return 1
             ;;
