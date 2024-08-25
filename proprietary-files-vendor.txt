@@ -1,4 +1,9 @@
 # All blobs below are extracted from the release mentioned in proprietary-files.txt
+
+# lowi-server, libcne, libwqe depend on libwpa_client, which is a gnu makefile target
+# 32bit libmmcamera_faceproc is unable to resolved the following symbols:
+# __aeabi_memcpy@LIBC_PRIVATE, __aeabi_memset@LIBC_PRIVATE, __gnu_Unwind_Find_exidx@LIBC_PRIVATE
+
 vendor/app/CACertService/CACertService.apk
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/app/IWlanService/IWlanService.apk
@@ -57,7 +62,7 @@ vendor/bin/init.qti.chg_policy.sh
 vendor/bin/ipacm
 vendor/bin/irsc_util
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/modem_svc
 vendor/bin/msm_irqbalance
 vendor/bin/netmgrd
@@ -724,7 +729,7 @@ vendor/lib/libcdfw_remote_api.so
 vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libcirrusspkrprot.so
-vendor/lib/libcne.so
+vendor/lib/libcne.so;DISABLE_CHECKELF
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneoplookup.so
 vendor/lib/libcneqmiutils.so
@@ -794,7 +799,7 @@ vendor/lib/libminkdescriptor.so
 vendor/lib/libminksocket.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmosal.so
 vendor/lib/libmulawdec.so
@@ -904,7 +909,7 @@ vendor/lib/libvpphcp.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvsc.so
 vendor/lib/libwms.so
-vendor/lib/libwqe.so
+vendor/lib/libwqe.so;DISABLE_CHECKELF
 vendor/lib/libxml.so
 vendor/lib/libxtadapter.so
 vendor/lib/libxtwifi_server_protocol.so
@@ -1272,7 +1277,7 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcirrusspkrprot.so
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
@@ -1372,7 +1377,7 @@ vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmotion_ae.so
 vendor/lib64/libmulawdec.so
@@ -1498,7 +1503,7 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvsc.so
 vendor/lib64/libwlcproto_aidl-default.so
 vendor/lib64/libwms.so
-vendor/lib64/libwqe.so
+vendor/lib64/libwqe.so;DISABLE_CHECKELF
 vendor/lib64/libxml.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_server_protocol.so
