@@ -71,6 +71,7 @@ function blob_fixup() {
             ;;
         # Fix typo in qcrilmsgtunnel whitelist
         product/etc/sysconfig/nexus.xml)
+            [ "$2" = "" ] && return 0
             sed -i 's/qulacomm/qualcomm/' "${2}"
             ;;
         *)
