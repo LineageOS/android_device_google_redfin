@@ -281,6 +281,7 @@ vendor/etc/data/netmgr_config.xml
 vendor/etc/default_snd.mps
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/android.hardware.authsecret-service.citadel.rc
+vendor/etc/init/android.hardware.camera.provider@2.7-service-google.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.2-service.fpc.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.confirmationui@1.0-service-google.rc
@@ -417,6 +418,7 @@ vendor/etc/ssg/tz_whitelist.json
 vendor/etc/thermal.mps
 vendor/etc/twoshay_config.json
 vendor/etc/vintf/manifest/android.hardware.authsecret-service.citadel.xml
+vendor/etc/vintf/manifest/android.hardware.camera.provider@2.7-service-google.xml
 vendor/etc/vintf/manifest/android.hardware.confirmationui@1.0-service-google.xml
 vendor/etc/vintf/manifest/android.hardware.identity.strongbox.xml
 vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service.citadel.xml
@@ -1182,6 +1184,8 @@ vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpsl.so
 vendor/lib64/lib-siputility.so
 vendor/lib64/lib-uceservice.so
+vendor/lib64/lib_profiler.so
+vendor/lib64/lib_sensor_listener.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libC2D2.so
