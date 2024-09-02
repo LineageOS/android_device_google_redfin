@@ -283,6 +283,7 @@ vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/android.hardware.authsecret-service.citadel.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.2-service.fpc.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/etc/init/android.hardware.camera.provider@2.7-service-google.rc
 vendor/etc/init/android.hardware.confirmationui@1.0-service-google.rc
 vendor/etc/init/android.hardware.drm-service.widevine-v17.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
@@ -417,6 +418,7 @@ vendor/etc/ssg/tz_whitelist.json
 vendor/etc/thermal.mps
 vendor/etc/twoshay_config.json
 vendor/etc/vintf/manifest/android.hardware.authsecret-service.citadel.xml
+vendor/etc/vintf/manifest/android.hardware.camera.provider@2.7-service-google.xml
 vendor/etc/vintf/manifest/android.hardware.confirmationui@1.0-service-google.xml
 vendor/etc/vintf/manifest/android.hardware.identity.strongbox.xml
 vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service.citadel.xml
@@ -1219,6 +1221,8 @@ vendor/lib64/libVkLayer_q3dtools.so
 vendor/lib64/lib_aion_buffer.so
 vendor/lib64/lib_goog_chi_node_utils.so
 vendor/lib64/lib_goog_metadata_utils.so
+vendor/lib64/lib_profiler.so
+vendor/lib64/lib_sensor_listener.so
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
