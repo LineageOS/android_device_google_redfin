@@ -231,3 +231,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     NfcOverlayRedfin
+
+# Set soong config variable to control module build
+$(call soong_config_set,ctpm,enable_nr_dual_connectivity_qcril,true)
