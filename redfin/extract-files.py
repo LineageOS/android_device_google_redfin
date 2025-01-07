@@ -60,6 +60,10 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/android.hardware.keymaster@4.1-impl.nos.so',
     ): blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
     'vendor/lib64/libgooglecamerahal.so': blob_fixup()
         .add_needed('libmeminfo_shim.so'),
 }  # fmt: skip
