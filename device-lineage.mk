@@ -9,6 +9,9 @@ $(call inherit-product, device/google/redbull/device-lineage.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-lineage
 
+# CHRE
+$(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/redfin:libadsprpc)
+
 # HBM
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlay
