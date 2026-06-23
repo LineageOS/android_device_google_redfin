@@ -25,8 +25,10 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/google/redbull',
     'hardware/google/interfaces',
-    'hardware/google/pixel',
+    'hardware/google/pixel/pixelstats',
+    'hardware/google/pixel/power-libperfmgr',
     'hardware/qcom/sm7250/display',
     'hardware/qcom/sm7250/gps',
     'hardware/qcom/wlan/legacy',
