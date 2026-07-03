@@ -130,10 +130,6 @@ PRODUCT_PRODUCT_PROPERTIES +=\
     ro.vendor.vibrator.hal.steady.shape=1 \
     ro.vendor.vibrator.hal.lptrigger=0
 
-# Dumpstate HAL
-PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.1-service.redfin
-
 #per device
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/redfin/init.redfin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.redfin.rc
