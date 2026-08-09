@@ -268,6 +268,11 @@
     <!-- default refresh rate in the high zone defined by birghtness and ambient thresholds -->
     <integer name="config_fixedRefreshRateInHighZone">60</integer>
 
+    <!-- Amount of time it takes for the light sensor to warm up in milliseconds.
+         For this time after the screen turns on, the Power Manager
+         will not debounce light sensor readings -->
+    <integer name="config_lightSensorWarmupTime">500</integer>
+
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
      when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
      where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
