@@ -1,5 +1,6 @@
 soong_namespace {
     imports: [
+        "device/google/redbull",
         "hardware/google/interfaces",
         "hardware/google/pixel/health",
         "hardware/google/pixel/pixelstats",
