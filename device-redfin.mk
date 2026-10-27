@@ -144,11 +144,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/google/redfin/displayconfig/display_id_4630946523002478721.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946523002478721.xml
 
-
-# Audio effects
-PRODUCT_PACKAGES += \
-    libqcomvoiceprocessingdescriptors
-
 # SKU specific RROs
 PRODUCT_PACKAGES += \
     SettingsOverlayG5NZ6 \
