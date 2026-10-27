@@ -5,7 +5,6 @@ soong_namespace {
         "hardware/google/pixel/health",
         "hardware/google/pixel/pixelstats",
         "hardware/google/pixel/thermal",
-        "hardware/google/pixel/usb",
     ],
 }
 
