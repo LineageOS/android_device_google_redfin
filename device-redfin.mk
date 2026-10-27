@@ -104,12 +104,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.thermal_listener.enable=true \
 
-# USB HAL
-PRODUCT_PACKAGES += \
-    android.hardware.usb-service.redfin
-PRODUCT_PACKAGES += \
-    android.hardware.usb.gadget-service.redfin
-
 # Vibrator HAL
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.redfin
